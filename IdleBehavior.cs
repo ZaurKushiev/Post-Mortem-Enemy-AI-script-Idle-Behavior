@@ -22,7 +22,7 @@ public class IdleBehavior : StateMachineBehaviour
 
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        // Отписываемся от события изменения здоровья
+        // Отписываемся от изменения здоровья
         enemy.OnHealthChanged -= HandleHealthChanged;
     }
 
