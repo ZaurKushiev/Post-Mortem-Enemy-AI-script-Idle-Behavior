@@ -27,7 +27,7 @@ public class IdleBehavior : StateMachineBehaviour
             randomPatrolTime = Random.Range(0f, patrolActivationTime);
         }
 
-        // Если прошедшее время больше случайного времени, активируем патрулирование
+        // Если прошедшее время больше случайного времени, то активируем патрулирование
         if (timer > randomPatrolTime)
         {
             animator.SetBool("isPatrolling", true);
